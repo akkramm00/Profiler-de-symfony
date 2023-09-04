@@ -69,9 +69,23 @@
         </p>  
         <h2>Message d'exceptions</h2>
         <p>
-          Comme toujours dans la programmation et le  monde de l'informatique, il est nécéssaire de connaitre un minimum d'anglais. Le message est clair, leprofiler n'a pas trouvé de route pour get http:// 127.0.0.1.8000/. C'est normal, nous n'en avons pa s encore créé  et symfony, par intermédiaire du profiler , nous dit que ce n'est pas normal, parce que pour toute adresse URL il faut une route. Si vous cliquez sur logs ou que vous regardez votre console, vous trouverez un message similaire.
+          Comme toujours dans la programmation et le  monde de l'informatique, il est nécéssaire de connaitre un minimum d'anglais. Le message est clair, leprofiler n'a pas trouvé de route pour get http:// 127.0.0.1.8000/. C'est normal, nous n'en avons pa s encore créé  et symfony, par intermédiaire du profiler , nous dit que ce n'est pas normal, parce que pour toute adresse URL il faut une route. Si vous cliquez sur logs ou que vous regardez votre console, vous trouverez un message similaire. <br>
+          Puisque nous sommes sur symfony Profiler, découvrons cette page avec les mines d'informations qui nous sont fournies.
         </p>
-        
+        <br><br>
+        <h2> Barre de recherche </h2>
+       <p>
+        Tout en haut  à droite nous avons un outil de recherche qui nous emmène directement sur la documentation officielle de symfony. Essayez par exemple avec le mot "profiler" . Vous pouvez choisir parmis les différentes propositions de recherche la réfgérence qui vous patait la plus opportuniste La première proposition est intéréssante. Ensuite, sur votre droite, choisissez la version de symfony que vous utilisez .
+       </p> 
+
+        <h2>URL</h2>
+        <p>
+          Maintenant, juste en dessous , en rouge dans notre cas parce que nous sommes en HTTP Status 404, bien sur nous serions en vert si nous étions en HTYP Status 200, vous trouverez des informations sur l'URL et la connaixion. Rien de bien compliqué, vous devriez pouvoir comprendre ces informations. Notez tout de meme le token qui est généré par le profiler. Grace à celui-ci, vous pourrez par exemple accéder aux données du profiler dans votre programme, par exemple avec ce code ci-dessous :
+          <br><br>
+
+          => $token = $response->headers->get('X-debug-Token');<br>
+          =>profile = $container->get('profiler')è>loadProfile($token);
+        </p>
       </div>
     </div>
   </main>
