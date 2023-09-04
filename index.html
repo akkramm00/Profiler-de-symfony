@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header class="container-fluid">
+    <div class="row">
+      <div class="col navbar bg-dark textlight w-100 py-5 d-flex justify-content-around">
+        <a href="index.html">Installation</a>
+        <a href="Onglets.html">Onglets</a>
+        <a href=""></a>
+        <a href=""></a>
+      </div>
+    </div>
+  </header>
+  
+  <main class="container my-3">
+    <div class="row">
+      <div class="col">
+        <h1>Le Profiler en Symfony</h1>
+        <p>
+          Le profiler ainsi que d'autres outils de débogage ne sontp as installés par défaut dans le framework de
+          Symfony.Il va donc nous falloir l'installer.<br>
+          Avant de le faire , il faut toutefois bien comprendre que c'est un outils de développement, voire de test, et
+          qu'il ne faiut surtout pas l'utiliser en mode production, car des outils de débogage tel que Profiler, non
+          seulement jouent sur les pérformances, mais surtout peut ouvrir des failles de sécurité.<br>
+          Par défaut c'est la variéble "APP_ENV" se trouvant dans le fichier ".ev" qui détérmine le mode de
+          développement.<br>
+          => (ENV = dev / test / prod );
+        </p>
+        <h2>Installation</h2>
+        <p>
+          Si vous souhaitez ajouter uniquement le pack Profiler, vous pouvez l'installer avec cette lignede commande
+          dans le projet que vous venez de créer: <br><br>
+
+          => $ composer require --dev symfony/profiler-pack
+          <br><br>
+          NOus vous conseillons de plutot installer "debug" qui offre d'autres outils de débogage méme si nous ne les
+          détaillerons pas tous dans ce cours ainsi que des fonctionnalités plus poussées au profiler qui'il installera
+          de toute façon. <br><br>
+
+          => composer require --debug --dev
+          <br>
+          Si vous venez d'effectuer cette ligne de commande , vous ^pouivez noter tous les packs qui ont été installés et configurés, à savoir: 
+          <br><br>
+          * twig/twig <br>
+          * symfony/translation-contracts<br>
+          * symfony/twig-bridge<br>
+          * symfony/twig-bundle<br>
+          * symfony/web-profilrer-bundle<br>
+          * symfony/stpwatch<br>
+          * symfony/profiler-pack<br>
+          * monolog/monolog<br>
+          * monolog/monolog-bridge<br>
+          * symfony/debug-bundle<br>
+          * symfony/debug-pack<br>
+          
+          
+          
+
+
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
