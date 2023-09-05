@@ -46,9 +46,13 @@
         <h2>Onglet Logs</h2>
 
         <p>
-          cet onglet est l'un des principales caractéristiques du Profiler de Symfony, il montre non seulement les journaux de débogage d'erreur mais aussi toutes les dépréciations déclenchées par l'application.
+          cet onglet est l'un des principales caractéristiques du Profiler de Symfony, il montre non seulement les journaux de débogage d'erreur mais aussi toutes les dépréciations déclenchées par l'application. <br>
+          Depuis la vrsion 5.4 de Symfony, cette section a été entièrement repensée. Chaque message de journal a été réorganisé pour que les informations soient plus faciles à comprendre. Par exemple, sous l'orodateur, on voit immédiatement si c"est un debug, une info ou une erreur et dans la partie message, la catégorie. le système de filtrage par type(level) ou catégorie (channel) est plus avancéet plus rapide. pra défaut, Symfony propose ses propres channels(debug, info, etc)
         </p>
-
+<h2>Onglet Events</h2>
+        <p>
+           Cet onglet liste tous les événements qui ont été lancés durant la requête. En effet, Symfony travaille pour vous, le frameworke "écoute" tout ce qui se passe dans l'application. Regardez déja tout ce qui est listé sur cette première poage, alors que nous n'avons pas encore commencé à coder.
+        </p>
         
       
        </div>
