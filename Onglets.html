@@ -56,9 +56,26 @@
         <h2>Onglet Routing</h2>
         <p>
         Cet onglet profiler va lister toutes les routes qui ont été trouvées dans votre application. Vous y trouverez son nom et son chemin URL. Le profiler mettra en vert , comme dans l'exempleci-dessous, ce qui est issu d'une application fonctionnellr, la route qui "matches", c'est-à-dire qui correspond à la requête dans la liste mais aussi danbs un encadré en haut de la pagfe. Si des parametres ont été passées à la route, vous les trouverez dans la première section.
-          
         </p>  
-      
+        <h2>Onglet Cache</h2>
+      <p>
+        L'utilisation d'un cache est un excellent moyen de rendre une application plus rapide. Lorsque vous maitrisez cette partie, vous y trouverez les inforùmations sur le cache dans cet onglet.(Voir onglet Cache).
+      </p>
+
+        <h2>Onglet Twig Metrics</h2>
+        <p>
+          Comme son nom l'indique, cet onglet va vous donner des mesures sur le moteur de template Twig. Vous trouverez dans la Toolbar sous forme d'une icone représentant une brindille les valeurs clés à retenir. A savoir :
+          <br>
+          => Le temps du rendu de la page en millisecondes. <br>
+          => Les 2léments de template appelés, cela peut etre la Toolbar apr exemple. <br>
+          =)> Le nombre de blocs Twig appelés. Imaginez que vous avez un formulaire Twig, un bloc sera par exemple un form_row. <br>
+          => Le nombre de macros appelées, à savoir qu'une macro Twig est comparable à une fonction en PHP. <br>
+        </p>
+        <h2>Debug</h2>
+        <p>
+          Vous connaissez certainement la fonction "var_dump()" de PHP qui affiche les informationns structurées d'une variable avec son type et sa valeur, et explore les tableaux et les objets. La fonction dump() provient de symfony et permet d'afficher les informations de var_dump de facon plus visuelle et graphique. <br>
+          Dump(), lorsqu'elle est utilisée dans le code PHP de l'application Symfony, se verra représenté dans la Toolbar par une icone représentant une cible, suisvie de nombre de fois que cette méthode a été utilisé. Au survol, vous aurez le visuel des informations récoltées par Dump(). Il exixte également ,la méthode dd(dump and die) qui permet de dump grace au composant debug de symfony et par la suite d'arréter l'exécition du code. C'est très utile lorsque vous voulez déboguer une ligne sans exécuter des actions suivantes.
+        </p>
        </div>
     </div>
   </main>
